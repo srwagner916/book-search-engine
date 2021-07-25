@@ -1,9 +1,4 @@
-const resolvers = {
-  Query: {
-    helloWorld: () => {
-      return 'Hello World';
-    }
-  }
-};
+const { User, Book } = require('../models');
+const { signToken } = require('../utils/auth');
 
 module.exports = resolvers;
